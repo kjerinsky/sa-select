@@ -1,0 +1,66 @@
+.sa-select-wrapper {
+  display: contents;
+  position: relative;
+}
+
+.sa-select-wrapper:after {
+  content: '\01F50D';
+  cursor: pointer;
+  position: relative;
+  right: 1.3em;
+}
+
+.sa-select-modal {
+  background: white;
+  border-radius: 0.3em;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  display: block;
+  height: 100px;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  z-index: 100;
+}
+
+.sa-select-modal-closed {
+  display: none;
+}
+
+.sa-select-close-button {
+  background: none;
+  border: none;
+  color: #000;
+  display: block;
+  font-size: 14px;
+  margin: 5px;
+  margin-left: auto;
+  padding: 1px 6px;
+}
+
+.sa-select-close-button:hover {
+  background: #aaa;
+}
+
+.sa-select-modal-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+
+}
+
+.sa-select-modal-content {
+  padding: 20px 10px;
+}
+
+.sa-select-input {
+  font-size: 1.2em;
+  width: 100%;
+}
